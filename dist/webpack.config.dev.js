@@ -12,6 +12,8 @@ var CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 var TerserPlugin = require('terser-webpack-plugin');
 
+var Dotenv = require('dotenv-webpack');
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -67,7 +69,7 @@ module.exports = {
       from: path.resolve(__dirname, 'src', 'assets/images'),
       to: "assets/images"
     }]
-  })],
+  }), new Dotenv()],
   optimization: {
     minimize: true,
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()]
