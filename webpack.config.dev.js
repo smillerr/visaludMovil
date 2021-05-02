@@ -16,6 +16,7 @@ module.exports = {
         assetModuleFilename: 'assets/images/[hash][ext][query]'
     },
     mode: 'development',
+    devtool: 'source-map',
     resolve: {
         extensions: ['.js'],
         alias: {
@@ -80,7 +81,7 @@ module.exports = {
             ]
         }),
         new Dotenv(),
-        new BundleAnalyzerPlugin()
+        // new BundleAnalyzerPlugin()
     ],
     /** optimization is not required in development */
     /* optimization: {
