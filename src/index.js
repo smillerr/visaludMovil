@@ -1,8 +1,7 @@
-// entry point of the app
+import Template from './templates/Template.js';
+console.log('hola');
 
-import sum from './utils/sum'
-
-const hello = 'hello'
-
-console.log(hello)
-console.log(sum(5,4))
+(async function App() {
+  const main = null || document.getElementById('main');
+  main.innerHTML = await Template();
+})();

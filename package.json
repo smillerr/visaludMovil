@@ -1,14 +1,28 @@
 {
-  "name": "webpack-base-config",
+  "name": "webpack-basic-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "A minimal portfolio with Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmrestrepoc/webpack-basic-config.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Carlos Restrepo <cmrestrepoc@unal.edu.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmrestrepoc/webpack-basic-config/issues"
+  },
+  "homepage": "https://github.com/cmrestrepoc/webpack-basic-config#readme",
   "devDependencies": {
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0"
