@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _getData = _interopRequireDefault(require("../utils/getData.js"));
+var _getData = _interopRequireDefault(require("@utils/getData.js"));
 
-var _github = _interopRequireDefault(require("../assets/images/github.png"));
+var _github = _interopRequireDefault(require("@images/github.png"));
 
-var _twitter = _interopRequireDefault(require("../assets/images/twitter.png"));
+var _twitter = _interopRequireDefault(require("@images/twitter.png"));
 
-var _instagram = _interopRequireDefault(require("../assets/images/instagram.png"));
+var _instagram = _interopRequireDefault(require("@images/instagram.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
