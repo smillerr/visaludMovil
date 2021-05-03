@@ -36,6 +36,12 @@ module.exports = {
         loader: 'babel-loader'
       }
     }, {
+      test: /\.html$/,
+      use: {
+        loader: 'html-loader' // Needed in React
+
+      }
+    }, {
       test: /\.css|.styl$/i,
       use: [MiniCssExtractPlugin.loader, 'css-loader', 'stylus-loader']
     }, {
@@ -57,7 +63,7 @@ module.exports = {
     }]
   },
   plugins: [new HtmlWebpackPlugin({
-    inject: true,
+    /* inject: true, this is not needed since html-loader does this */
     template: './public/index.html',
     filename: './index.html'
   }), new MiniCssExtractPlugin({
