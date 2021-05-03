@@ -1,4 +1,5 @@
-(async function App() {
-  const main = null || document.getElementById('main');
-  main.innerHTML = await Template();
-})();
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/App'
+
+ReactDOM.render(<App />, document.getElementById('app'))

@@ -15,13 +15,13 @@ module.exports = {
         assetModuleFilename: 'assets/images/[hash][ext][query]'
     },
     resolve: {
-        extensions: ['.js'],
+        extensions: ['.js', '.jsx'],
         alias: {}
     },
     module: {  
         rules: [
             {
-                test: /\.m?js$/,
+                test: /\.(m?js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'

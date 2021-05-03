@@ -18,13 +18,13 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     resolve: {
-        extensions: ['.js'],
+        extensions: ['.js', '.jsx'],
         alias: {}
     },
     module: {  
         rules: [
             {
-                test: /\.m?js$/,
+                test: /\.(m?js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
