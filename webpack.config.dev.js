@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
+/* const CopyPlugin = require('copy-webpack-plugin') */
 /* Optimization is not required in development */
 /* const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin') */
@@ -19,12 +19,7 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         extensions: ['.js'],
-        alias: {
-            '@utils': path.resolve(__dirname, 'src/utils/'),
-            '@templates': path.resolve(__dirname, 'src/templates/'),
-            '@styles': path.resolve(__dirname, 'src/styles/'),
-            '@images': path.resolve(__dirname, 'src/assets/images/'),
-        }
+        alias: {}
     },
     module: {  
         rules: [
@@ -72,14 +67,14 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'assets/[name].[contenthash].css'
         }),
-        new CopyPlugin({
+        /* new CopyPlugin({
             patterns: [
                 {
                     from: path.resolve(__dirname, 'src', 'assets/images'),
                     to: "assets/images"
                 }
             ]
-        }),
+        }), */
         new Dotenv(),
         // new BundleAnalyzerPlugin()
     ],

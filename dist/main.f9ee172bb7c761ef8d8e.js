@@ -61,153 +61,6 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ }),
 
-/***/ "./src/templates/Template.js":
-/*!***********************************!*\
-  !*** ./src/templates/Template.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utils_getData_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @utils/getData.js */ "./src/utils/getData.js");
-/* harmony import */ var _images_github_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @images/github.png */ "./src/assets/images/github.png");
-/* harmony import */ var _images_twitter_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @images/twitter.png */ "./src/assets/images/twitter.png");
-/* harmony import */ var _images_instagram_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @images/instagram.png */ "./src/assets/images/instagram.png");
-
-
-
-
-
-
-
-var Template = /*#__PURE__*/function () {
-  var _ref = (0,_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee() {
-    var data, view;
-    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            _context.next = 2;
-            return (0,_utils_getData_js__WEBPACK_IMPORTED_MODULE_2__.default)();
-
-          case 2:
-            data = _context.sent;
-            view = "\n    <div class=\"About\">\n      <div class=\"card\">\n        <div class=\"card_details\">\n          <div class=\"card_photo center circle\">\n            <img src=\"".concat(data.picture.large, "\" alt=\"").concat(data.name.first, "\">\n            <svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"enable-background:new -580 439 577.9 194;\"\n              xml:space=\"preserve\">\n              <circle cx=\"50\" cy=\"50\" r=\"40\" />\n            </svg>\n          </div>\n          <p class=\"card_title\">Hi, My name is</p>\n          <p class=\"card_value\">").concat(data.name.first, " ").concat(data.name.last, "</p>\n        </div>\n        <div class=\"card_userdata\">\n          <ul>\n            <li>").concat(data.email, "</li>\n            <li>").concat(data.location.country, "</li>\n          </ul>\n        </div>\n        <div class=\"card_social\">\n          <a href=\"https://twitter.com/gndx\">\n            <img src=\"").concat(_images_twitter_png__WEBPACK_IMPORTED_MODULE_4__, "\" />\n          </a>\n          <a href=\"https://github.com/gndx\">\n            <img src=\"").concat(_images_github_png__WEBPACK_IMPORTED_MODULE_3__, "\" />\n          </a>\n          <a href=\"https://instagram.com/gndx\">\n            <img src=\"").concat(_images_instagram_png__WEBPACK_IMPORTED_MODULE_5__, "\" />\n          </a>\n        </div>\n      </div>\n    </div>\n  ");
-            return _context.abrupt("return", view);
-
-          case 5:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-
-  return function Template() {
-    return _ref.apply(this, arguments);
-  };
-}();
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Template);
-
-/***/ }),
-
-/***/ "./src/utils/getData.js":
-/*!******************************!*\
-  !*** ./src/utils/getData.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var API = "https://randomuser.me/api/";
-
-var getData = /*#__PURE__*/function () {
-  var _ref = (0,_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee(id) {
-    var apiURl, response, data;
-    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            apiURl = id ? "".concat(API).concat(id) : API;
-            _context.prev = 1;
-            _context.next = 4;
-            return fetch(apiURl);
-
-          case 4:
-            response = _context.sent;
-            _context.next = 7;
-            return response.json();
-
-          case 7:
-            data = _context.sent;
-            return _context.abrupt("return", data.results[0]);
-
-          case 11:
-            _context.prev = 11;
-            _context.t0 = _context["catch"](1);
-            console.log('Fetch Error', _context.t0);
-
-          case 14:
-            ;
-
-          case 15:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee, null, [[1, 11]]);
-  }));
-
-  return function getData(_x) {
-    return _ref.apply(this, arguments);
-  };
-}();
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getData);
-
-/***/ }),
-
-/***/ "./src/styles/main.css":
-/*!*****************************!*\
-  !*** ./src/styles/main.css ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/styles/var.styl":
-/*!*****************************!*\
-  !*** ./src/styles/var.styl ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./node_modules/regenerator-runtime/runtime.js":
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
@@ -964,39 +817,6 @@ try {
 }
 
 
-/***/ }),
-
-/***/ "./src/assets/images/github.png":
-/*!**************************************!*\
-  !*** ./src/assets/images/github.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/9c4faee7513f87e9b3b3.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/instagram.png":
-/*!*****************************************!*\
-  !*** ./src/assets/images/instagram.png ***!
-  \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/8932205d8701217166c9.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/twitter.png":
-/*!***************************************!*\
-  !*** ./src/assets/images/twitter.png ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/images/a4a49dfe20c4a1a2c681.png";
-
 /***/ })
 
 /******/ 	});
@@ -1050,18 +870,6 @@ module.exports = __webpack_require__.p + "assets/images/a4a49dfe20c4a1a2c681.png
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -1078,26 +886,6 @@ module.exports = __webpack_require__.p + "assets/images/a4a49dfe20c4a1a2c681.png
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -1110,12 +898,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _templates_Template_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @templates/Template.js */ "./src/templates/Template.js");
-/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @styles/main.css */ "./src/styles/main.css");
-/* harmony import */ var _styles_var_styl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @styles/var.styl */ "./src/styles/var.styl");
-
-
-
 
 
 (function () {
@@ -1127,7 +909,7 @@ __webpack_require__.r(__webpack_exports__);
           case 0:
             main =  false || document.getElementById('main');
             _context.next = 3;
-            return (0,_templates_Template_js__WEBPACK_IMPORTED_MODULE_2__.default)();
+            return Template();
 
           case 3:
             main.innerHTML = _context.sent;
@@ -1150,4 +932,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.f385e73c93636d95c9d4.js.map
+//# sourceMappingURL=main.f9ee172bb7c761ef8d8e.js.map
