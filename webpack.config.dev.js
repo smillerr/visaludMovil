@@ -37,11 +37,12 @@ module.exports = {
                 }
             },
             {
-                test: /\.css|.styl$/i,
+                test: /\.s[ac]ss|.styl$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'stylus-loader'
+                    'sass-loader',
+                    /* 'stylus-loader' */
                 ]
             },
             {
@@ -71,7 +72,7 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'assets/[name].[contenthash].css'
+            filename: 'styles/[name].[contenthash].css'
         }),
         /* new CopyPlugin({
             patterns: [
