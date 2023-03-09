@@ -1,38 +1,32 @@
 
 
 const Header =  ()=>{
-    const view = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+    const view = `<nav class="d-flex flex-row">
+    <div>
       <a class="navbar-brand" href="#">
-        <img src="../assets/images/escudo.jpg" alt="Escudo Jamundí">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSb_Kge3cxykqrWdfXBNEFppenDzHQhznlWTb5MOvBg&s"
+          alt="escudo"
+          width="160"
+        />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+    </div>
+    <div class="container-fluid d-flex justify-content-center flex-column">
+      <div class="d-flex justify-content-center" width="25%">
+        <h2>MUNICIPIO DE JAMUNDÍ (V)</h2>
       </div>
+      <div class="d-flex justify-content-center">
+        <h3>Vigilancia en Salud Pública</h3>
+      </div>
+      <div class="d-flex justify-content-center">
+        <h4>Control de Riesgo en Alimentos y Bebidas</h4>
+      </div>
+      <div class="d-flex justify-content-center">
+        <h4>IVC a Establecimientos y Vehículos</h4>
+      </div>
+    </div>
+    <div class="d-flex align-items-center">
+      <button type="button" class="btn btn-primary">Opciones</button>
     </div>
   </nav>`
 }
