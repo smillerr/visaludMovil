@@ -1,7 +1,7 @@
 
 
 const Header =  ()=>{
-    const view = `<nav class="d-flex flex-row">
+    return `<nav class="d-flex flex-row">
     <div>
       <a class="navbar-brand" href="#">
         <img

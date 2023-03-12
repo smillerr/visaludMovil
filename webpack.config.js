@@ -33,7 +33,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.css/,
+                test: /\.css/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
@@ -43,6 +43,20 @@ module.exports = {
                 test: /\.png/,
                 type: 'asset/resource'
             },
+            {
+                test: /\.(woff|woff2)$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 10000,
+                        mimetype: "application/font-woff",
+                        name: "[name].[contenthash].[ext]",
+                        outputPath: "./assets/fonts/",
+                        publicPath: "../assets/fonts/",
+                        esModule: false,
+                    }
+                }
+            }
         ]
     },
     plugins: [

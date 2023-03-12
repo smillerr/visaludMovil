@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Ubuntu';
+	src: url(../assets/fonts/ubuntu-regular.d7115b526e4688a4690481c147d666e7.woff2) format('woff2'),
+		url(../assets/fonts/ubuntu-regular.8efd18174f24d758cb7ccda4e404f72a.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+html {
+	font-family: sans-serif;
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body {
+	margin: 0
+}
+
+/*# sourceMappingURL=main.53190a6b272235991039.css.map*/
