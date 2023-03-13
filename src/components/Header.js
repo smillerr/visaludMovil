@@ -26,7 +26,7 @@ const Header =  ()=>{
       </div>
     </div>
     <div class="d-flex align-items-center">
-      <button type="button" class="btn btn-primary">Opciones</button>
+      <button type="button" class="btn btn-primary me-3">Opciones</button>
     </div>
   </nav>`
 }

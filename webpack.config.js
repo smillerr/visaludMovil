@@ -56,6 +56,13 @@ module.exports = {
                         esModule: false,
                     }
                 }
+            },
+            {
+                  test: /\.css$/,
+                  use: [
+                    'style-loader',
+                    'css-loader'
+                  ]
             }
         ]
     },
