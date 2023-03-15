@@ -33,11 +33,10 @@ module.exports = {
                 }
             },
             {
-                test: /\.css|.styl$/i,
+                test: /\.css/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'stylus-loader'
                 ]
             },
             {
@@ -57,6 +56,13 @@ module.exports = {
                         esModule: false,
                     }
                 }
+            },
+            {
+                  test: /\.css$/,
+                  use: [
+                    'style-loader',
+                    'css-loader'
+                  ]
             }
         ]
     },

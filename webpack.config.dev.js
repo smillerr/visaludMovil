@@ -36,11 +36,10 @@ module.exports = {
                 }
             },
             {
-                test: /\.css|.styl$/i,
+                test: /\.css$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'stylus-loader'
                 ]
             },
             {
@@ -92,9 +91,8 @@ module.exports = {
         ]
     }  */
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, "dist"),
         compress: true,
-        historyApiFallback: true,
-        port: 3006
-    }
+        port: 3006,
+    },
 }
