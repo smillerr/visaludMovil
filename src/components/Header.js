@@ -2,14 +2,13 @@
 
 const Header =  ()=>{
     return `<nav class="d-flex flex-row">
-    <div>
-      <a class="navbar-brand" href="#">
+    <div class="d-flex align-items-center">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSb_Kge3cxykqrWdfXBNEFppenDzHQhznlWTb5MOvBg&s"
           alt="escudo"
-          width="160"
+          width="130"
+          height="130"
         />
-      </a>
     </div>
     <div class="container-fluid d-flex justify-content-center flex-column">
       <div class="d-flex justify-content-center" width="25%">
