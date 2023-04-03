@@ -1,7 +1,7 @@
 
 
 const Header =  ()=>{
-    return `<nav class="d-flex flex-row">
+    return `<nav class="d-flex flex-row mt-3">
     <div class="d-flex align-items-center">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSb_Kge3cxykqrWdfXBNEFppenDzHQhznlWTb5MOvBg&s"
